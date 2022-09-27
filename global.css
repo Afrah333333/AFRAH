@@ -1,0 +1,43 @@
+body{
+    background-color: aqua;
+    background-image: url('../css2/images/paper.jpg');
+}
+.selections{
+    display: flex;
+    justify-content: center;
+}
+
+.selection{
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 5rem;
+    padding: 2rem;
+}
+.selection:hover{
+    transform: scale(1.2);
+}
+.result{
+   margin-top: 1rem;
+   display: grid;
+   justify-content: center;
+   justify-items: center;
+   align-items: center;
+   font-size: 4rem;
+   grid-template-columns: repeat(2,1fr);
+}
+.result-score{
+    margin-left: 1rem;
+    font-size: 5rem;
+    color: palevioletred;
+}
+.result-selection{
+    opacity: .5;
+    font-size: 3rem;
+    
+}
+.result-selection.winner{
+    opacity: 1;
+    font-size: 3rem;
+}
